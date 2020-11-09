@@ -14,4 +14,4 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 Add a feed source
-git clone https://github.com/kenzok8/openwrt-packages/luci-app-ssr-plus
+sed -i '$a src-git lean https://github.com/kenzok8/openwrt-packages.git' feeds.conf.default
